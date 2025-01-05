@@ -1,7 +1,7 @@
 # Load config
 source ./config.sh
 
-# Helper function for installing bew packages when missing
+# Helper function for installing brew packages when missing
 install_package() {
 	local package="$1"
 	if brew list "$package" &>/dev/null; then
