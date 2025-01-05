@@ -22,5 +22,5 @@ install_package "huggingface-cli"
 if [ ! -f "$MODEL_FILE" ]; then
 	huggingface-cli download MaziyarPanahi/Meta-Llama-3-8B-Instruct-GGUF --local-dir ./models --include '*Q4_K_M*gguf'
 else
-	echo "✔️ Model downloaded ($FILE)"
+	echo "✔️ Model downloaded ($MODEL_FILE)"
 fi
